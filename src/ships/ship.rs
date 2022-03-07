@@ -37,6 +37,10 @@ impl Ship {
         &self.size
     }
 
+    pub fn ship_type(&self) -> &ShipType {
+        &self.ship_type
+    }
+
     pub fn get_full_position(&self) -> (u8, u8, u8, u8) {
         let col = *self.coord.col();
         let row = *self.coord.row();
